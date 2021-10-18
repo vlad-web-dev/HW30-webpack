@@ -12,5 +12,16 @@ module.exports = {
         new HtmlWebpackPlugin(),
         new CleanWebpackPlugin(),
     ],
-    mode: 'development'
+    mode: 'development',
+    devServer: {
+        static: false,
+        compress: true,
+        port: 666,
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+        },
+    },
 }
