@@ -1,6 +1,6 @@
-const {Person} = require('../Person')
+import {Person} from "../Person";
 
-class Teacher extends Person {
+export class Teacher extends Person {
     constructor(data) {
         super(data);
         this.subject = data.subject
@@ -10,5 +10,3 @@ class Teacher extends Person {
         console.log(`Hello, my name is ${this.name} and i teach ${this.subject}`)
     }
 }
-
-exports.Teacher = Teacher

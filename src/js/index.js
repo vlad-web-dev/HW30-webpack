@@ -1,5 +1,5 @@
-const {Student} = require('./Student')
-const {Teacher} = require('./Teacher')
+import {Student} from "./Student";
+import {Teacher} from "./Teacher";
 
 const student = new Student({
     name: 'Vlad',

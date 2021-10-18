@@ -1,4 +1,4 @@
-class Person {
+export class Person {
     constructor(data) {
         this.name = data.name
         this.age = data.age
@@ -12,4 +12,3 @@ class Person {
     }
 }
 
-exports.Person = Person
